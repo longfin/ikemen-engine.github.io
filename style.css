@@ -1,3 +1,7 @@
+:root {
+  --ikemen-color: #20bafa;
+}
+
 * { 
     margin: 0;
     padding: 0;
@@ -12,18 +16,23 @@ body {
     color: white;
 }
 
-.main {
+.headline {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    border-bottom: 1em var(--ikemen-color) solid;
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 3em;
 }
 
 a {
-    color: cornflowerblue;
+    color: var(--ikemen-color);
     transition: 0.1s;
 }
 
@@ -63,8 +72,10 @@ a:hover {
     height: fit-content;
     margin-top: 32px;
     padding: 15px;
-    background-color: cornflowerblue;
+    background-color: var(--ikemen-color);
     text-decoration: none;
+    font-weight: bold;
+    border-radius: 3em;
     color: white;
     transition: 0.3s;
 }
@@ -123,10 +134,20 @@ a:hover {
     transition: 0.1s;
 }
 
+.big-section {
+    height: 100vh;
+}
+
+.feature-section {
+    padding: 5em;
+    color: black;
+    font-size: 24px;
+    background-color: #ddd;
+}
+
 .footer {
     display: block;
     justify-content: center;
-    position: absolute;
     bottom : 0;
 }
 
