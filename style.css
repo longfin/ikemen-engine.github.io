@@ -68,7 +68,8 @@ a:hover {
 .releases-button {
     width: fit-content;
     height: fit-content;
-    margin-top: 32px;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
     padding: 15px;
     background-color: var(--ikemen-color);
     text-decoration: none;
