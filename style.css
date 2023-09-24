@@ -8,15 +8,27 @@ body {
     min-height: 100vh;
     font-family: sans-serif;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #202020;
     color: white;
 }
 
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 h1 {
     font-size: 48px;
+}
+
+a {
+    color: cornflowerblue;
+}
+
+a:hover {
+    color: cyan;
+    transition: 0.1s;
 }
 
 .info-box {
@@ -77,4 +89,45 @@ h1 {
 
 .filter-white {
     filter: invert(99%) sepia(17%) saturate(228%) hue-rotate(197deg) brightness(112%) contrast(100%);
+}
+
+.filter-gray {
+    filter: invert(99%) contrast(10%);
+}
+
+.menu-bar, .footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 4em;
+    overflow: hidden;
+    background-color: #00000066;
+}
+
+.menu-bar a {
+    float: left;
+    padding: 0.5em;
+    color: gray;
+    text-decoration: none;
+}
+
+.menu-bar a:hover {
+    color: white;
+    transition: 0.1s;
+}
+
+.filter-gray:hover {
+    filter: invert(99%) contrast(100%);
+    transition: 0.1s;
+}
+
+.footer {
+    display: block;
+    justify-content: center;
+    position: absolute;
+    bottom : 0;
+}
+
+.footer * {
+    padding: 0.5em;
 }
