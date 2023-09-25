@@ -1,8 +1,11 @@
 :root {
-  --ikemen-color: #20bafa;
+    --ikemen-color: #20bafa;
+    --ikemen-highlight-color: #80f0ff;
+    --feature-bg: #222;
+    --feature-text: #fff;
 }
 
-* { 
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,7 +16,7 @@ body {
     font-family: sans-serif;
     text-align: center;
     background-color: #202020;
-    color: white;
+    color: #fff;
 }
 
 .headline {
@@ -30,21 +33,21 @@ h1 {
 
 h2 {
     font-size: 3em;
-    padding: 0.5em;
+    padding: .5em;
 }
 
 h3 {
     font-size: 1.25em;
-    padding: 0.25em;
+    padding: .25em;
 }
 
 a {
     color: var(--ikemen-color);
-    transition: 0.1s;
+    transition: .1s;
 }
 
 a:hover {
-    color: cyan;
+    color: var(--ikemen-highlight-color);
 }
 
 .info-box {
@@ -69,58 +72,40 @@ a:hover {
 }
 
 .logo:hover {
-    filter: drop-shadow(0px 0px 1em var(--ikemen-color));
+    filter: drop-shadow(0 0 1em var(--ikemen-color));
 }
 
 .releases-button {
     width: fit-content;
     height: fit-content;
     margin-top: 1.5em;
-    margin-bottom: 0.5em;
+    margin-bottom: .5em;
     padding: 15px;
     background-color: var(--ikemen-color);
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
     border-radius: 3em;
-    color: white;
-    transition: 0.3s;
+    color: #fff;
+    transition: .3s;
 }
 
 .releases-button:hover {
-    background-color: cyan;
-    color: black;
+    background-color: var(--ikemen-highlight-color);
+    color: #fff;
 }
 
 .releases-button:active {
-    background-color: black;
+    background-color: #000;
     color: var(--ikemen-color);
-    transition: 0.1s
-}
-
-.link-buttons {
-    width: 80px;
-    height: 32px;
-    margin-top: 32px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.link-buttons-a img {
-    width: 32px;
-    height: auto;
-}
-
-.filter-white {
-    filter: invert(99%) sepia(17%) saturate(228%) hue-rotate(197deg) brightness(112%) contrast(100%);
+    transition: .1s;
 }
 
 .filter-gray {
     filter: invert(99%) contrast(10%);
 }
 
-.menu-bar, .footer {
+.footer,
+.menu-bar {
     display: flex;
     align-items: center;
     width: 100%;
@@ -136,23 +121,23 @@ a:hover {
     padding: 1em;
     color: gray;
     text-decoration: none;
-    transition: 0.1s;
+    transition: .1s;
 }
 
 .menu-bar a:hover {
-    color: white;
+    color: #fff;
 }
 
 .menu-bar a:hover .filter-gray {
     filter: invert(99%) contrast(100%);
-    transition: 0.1s;
+    transition: .1s;
 }
 
 .feature-section {
     min-height: 100vh;
     padding: 3em;
     font-size: 1.5em;
-    background-color: #34383c;
+    background-color: #99bbff22;
 }
 
 .feature-container {
@@ -165,22 +150,22 @@ a:hover {
 
 .feature {
     display: block;
-    color: white;
-    background-color: #222;
-    border-radius: 0.5em;
+    color: var(--feature-text);
+    background-color: var(--feature-bg);
+    border-radius: .5em;
     width: 16em;
     min-height: 20em;
-    margin: 0.5em;
+    margin: .5em;
 }
 
 .feature p {
     padding: 1em;
-    font-size: 0.75em;
+    font-size: .75em;
 }
 
 .feature img {
-    border-top-left-radius: 0.5em;
-    border-top-right-radius: 0.5em;
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
     width: 100%;
     max-height: 40%;
     height: 40%;
@@ -190,9 +175,9 @@ a:hover {
 .footer {
     display: block;
     justify-content: center;
-    bottom : 0;
+    bottom: 0;
 }
 
 .footer * {
-    padding: 0.5em;
+    padding: .5em;
 }
