@@ -33,7 +33,7 @@ h2 {
 }
 
 h3 {
-    font-size: 2em;
+    font-size: 1.25em;
 }
 
 a {
@@ -148,9 +148,8 @@ a:hover {
 
 .feature-section {
     padding: 5em;
-    color: black;
     font-size: 1.5em;
-    background-color: #ddd;
+    background-color: #666;
 }
 
 .feature-container {
@@ -163,12 +162,18 @@ a:hover {
 
 .feature {
     display: block;
-    background-color: #fff;
+    color: white;
+    background-color: #222;
     border-radius: 0.5em;
     width: 16em;
     min-height: 20em;
     margin: 0.5em;
     transition: 0.25s;
+}
+
+.feature p {
+    padding: 0.5em;
+    font-size: 0.75em;
 }
 
 .feature:hover {
