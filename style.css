@@ -30,10 +30,12 @@ h1 {
 
 h2 {
     font-size: 3em;
+    padding: 0.5em;
 }
 
 h3 {
     font-size: 1.25em;
+    padding: 0.25em;
 }
 
 a {
@@ -148,9 +150,9 @@ a:hover {
 
 .feature-section {
     min-height: 100vh;
-    padding: 5em;
+    padding: 3em;
     font-size: 1.5em;
-    background-color: #666;
+    background-color: #34383c;
 }
 
 .feature-container {
@@ -169,16 +171,11 @@ a:hover {
     width: 16em;
     min-height: 20em;
     margin: 0.5em;
-    transition: 0.25s;
 }
 
 .feature p {
-    padding: 0.5em;
+    padding: 1em;
     font-size: 0.75em;
-}
-
-.feature:hover {
-    filter: drop-shadow(0px 0px 0.2em black);
 }
 
 .feature img {
@@ -186,6 +183,7 @@ a:hover {
     border-top-right-radius: 0.5em;
     width: 100%;
     max-height: 40%;
+    height: 40%;
     object-fit: cover;
 }
 
