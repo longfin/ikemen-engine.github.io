@@ -102,6 +102,7 @@ a:hover {
 
 .filter-gray {
     filter: invert(99%) contrast(10%);
+    transition: .1s;
 }
 
 .footer,
@@ -130,7 +131,6 @@ a:hover {
 
 .menu-bar a:hover .filter-gray {
     filter: invert(99%) contrast(100%);
-    transition: .1s;
 }
 
 .feature-section {
