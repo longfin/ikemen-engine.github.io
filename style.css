@@ -24,7 +24,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    border-bottom: 1em var(--ikemen-color) solid;
+    /*border-bottom: 1em var(--ikemen-color) solid;*/
 }
 
 h1 {
