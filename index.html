@@ -3,19 +3,75 @@
     <title>Ikemen GO - Open Source Fighting Engine</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ikemen GO is an open source fighting games engine that supports M.U.G.E.N resources, made in Google’s Programming Language “Go”.">
+    <meta name="description" content="Ikemen GO is an open source fighting game engine that supports M.U.G.E.N resources, made in the Go programming language.">
     <link href="./style.css" rel="stylesheet" type="text/css" media="all">
+    <script src="./index.js"></script>
 </head>
 <body>
-    <div class="info-box">
-        <div class="header">
-            <h1>Ikemen GO</h1>
-            <span style="font-size: 12px;">An open source fighting game engine that supports MUGEN resources</span>
+    <div class="menu-bar">
+        <a class="link-buttons-a" href="https://ikemen-engine.github.io/"><img class="filter-gray" src="./resources/logo-ikemen.svg"></img></a>
+        <a href="https://github.com/ikemen-engine/Ikemen-GO/wiki"><span>Documentation</span></a> <!-- TODO: Replace the wiki link with a website mirror of the docs, eventually...? -->
+        <a href="https://github.com/ikemen-engine/Ikemen-GO"><span>GitHub</span></a>
+        <a href="https://discord.com/invite/QWxxwjE"><span>Discord</span></a>
+    </div>
+        <div class="headline">
+            <img class="logo" src="./resources/ikemen-big.svg"></img>
+            <div class="info-box">
+                <div class="header">
+                    <h1>Ikemen GO</h1>
+                    <span style="font-size: 12px;">An open source fighting game engine that supports M.U.G.E.N resources</span>
+                </div>
+                <a class="releases-button" href="https://github.com/ikemen-engine/Ikemen-GO/releases/latest"><p id="version">Download latest version</p></a>
+                <span style="font-size: 12px;">Want bleeding-edge features and fixes? Try the <a href="https://github.com/ikemen-engine/Ikemen-GO/releases/tag/nightly">nightly builds!</a></span><br>
+                <span style="font-size: 12px;">Or click <a href="https://github.com/ikemen-engine/Ikemen-GO/releases/latest">here</a> for the releases page.</span>
+            </div>
         </div>
-        <a class="releases-button" href="https://github.com/ikemen-engine/Ikemen-GO/releases">Download latest version: 0.98.2</a>
-        <div class="link-buttons">
-            <a class="link-buttons-a" href="https://github.com/ikemen-engine/Ikemen-GO"><img class="filter-white" src="./resources/logo-github.svg"></img></a>
-            <a class="link-buttons-a" href="https://discord.com/invite/QWxxwjE"><img class="filter-white" src="./resources/logo-discord.svg"></img></a>
+
+        <div class="feature-section">
+            <h2>Features</h2>
+            <div class="feature-container">
+                <div class="feature">
+                    <img src="./resources/scripting.png"></img>
+                    <h3>Improved Scripting</h3>
+                    <p>Lua scripting allows for new game modes and customizable story paths, and the brand-new ZSS language gives creators a new way to program characters with a full-fledged scripting language.</p>
+                </div>
+
+                <div class="feature">
+                    <img src="./resources/backcompat.png"></img>
+                    <h3>Backward-Compatible</h3>
+                    <p>The engine supports over twenty years worth of content made by a passionate community, with compatibility on par with M.U.G.E.N 1.1 Beta.</p>
+                </div>
+
+                <div class="feature">
+                    <img src="./resources/netplay.png"></img>
+                    <h3>Network Play</h3>
+                    <p>Delay-based netcode makes it possible for two players to connect to each other over the Internet and duke it out in a versus match, or play cooperatively in arcade or survival mode.</p>
+                </div>
+
+                <div class="feature">
+                    <img src="./resources/multiplat.png"></img>
+                    <h3>Multi-Platform</h3>
+                    <p>The engine natively supports all three major desktop operating systems: Windows, macOS, and Linux.</p>
+                </div>
+
+                <div class="feature">
+                    <img src="./resources/opensource.png"></img>
+                    <h3>Open-Source</h3>
+                    <p>Ikemen GO's source code is available under the MIT license, allowing it to be used for personal and commercial uses, completely for free.</p>
+                </div>
+
+                <div class="feature">
+                    <img src="./resources/development.png"></img>
+                    <h3>Actively Developed</h3>
+                    <p>New features, bug fixes, and other improvements are being constantly worked on by a group of collaborating developers and contributors over on GitHub.</p>
+                </div>
+            </div>
+
+            <!-- Possible future suggestion: Fullgame showcase of some kind. -->
         </div>
+
+    <div class="footer">
+        <p>Ikemen GO (c) 2016-2023. Brand icons belong to their respective owners.</p>
+        <a href="https://github.com/ikemen-engine/ikemen-engine.github.io">Website Source</a>
     </div>
 </body>
